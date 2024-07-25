@@ -1,0 +1,45 @@
+const btnsOpenModal = document.querySelector(".show-modal");
+console.log(btnsOpenModal);
+<button class="show-modal">Show modal 1</button> will be logged
+whenever we use query selector with a selector, which actually matches multiple elements, only the first one will get selected
+Using query selectorAll we get something called a Nodelist. It'll contain all the 3 buttons
+if we want to do something, to all of these buttons, then we can simply loop through this NodeList and do something with them.
+
+Using classes is a really great and handy way of manipulating webpages. And in practice adding and removing 
+classes, is the main way in which we change styles on websites. That's because a class basically aggregates 
+many styles in just one class. Here the hidden class only contains one style here. So this would've been 
+the same as specifying the display style directly in JavaScript. We could've done also, 
+modal.style.display = "block",  
+But It's a bit more of a pain. Because then we would have to memorize what exactly we have to write here i.e.
+property name and the exact value. And this is only for one style i.e. display
+
+Imagine that the hidden class actually had 10 properties. Then we 
+would have to write all of the properties manually and change all their values. So that's a lot of work. And 
+so instead we can basically aggregate all of this properties in one class, that we identify in CSS, and then in JS we 
+simply add and remove the classes as we need or don't need these styles. So, usually when we need to manipulate styles on a page, 
+then always just export the styles into a class, and then use the class.
+
+use the functionality of adding and removing classes all the time in order to change the appearance of elements on our page. And 
+that's because classes allow us to basically aggregate multiple CSS properties in just one, like a container. So each class functions
+a bit like a container with a lot of properties in it. And then, by adding and removing them, we basically can activate and 
+deactivate certain styles, all at the same time.
+
+1. Manipulate classes with JS (Activate, deactivate)
+2. Check if class is present or not on an element, Keypress event
+
+Keypress events are Global events because they do not happen on one specific element. And for global events like keyboard events we 
+usually listen on the whole document.
+by using add event listener here on the document we are basically listening for events everywhere. So no matter where they happen on 
+the page, they will always trigger the event handler.
+
+there are actually three types of events for the keyboard. There is the key down the key press or the key up.
+key up,  only happens when we lift or finger off the key. Key press is fired continuously as we keep our finger on a certain key and 
+key down is fired as soon as we just press down the key.
+
+as we hit any key here on the keyboard, a key down event is generated and our listener function here i.e. handler function is waiting
+for that event to happen and anytime that an event like this occurs JS does in fact generate an object. And that object contains all 
+the information about the event itself, and we can then actually access that object indie event handler function.
+
+So then as the event occurs JS, will call the function with the event object as an argument. This works because we do not call this 
+function here ourselves. We only define it here. So we say to JS to call function when a key down event happens. And when you do so 
+please pass in the event object as an argument.
