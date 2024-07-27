@@ -27,6 +27,12 @@ const init = function () {
   score0El.textContent = score1El.textContent = 0;
   current0El.textContent = current1El.textContent = 0;
 
+  document.querySelector(`#name--${activePlayer}`).textContent = `PLAYER 1`;
+
+  document
+    .querySelector(`#name--${activePlayer}`)
+    .classList.remove("infinite-color-change");
+
   player0El.classList.remove("player--winner");
   player1El.classList.remove("player--winner");
   player0El.classList.add("player--active");
@@ -76,6 +82,13 @@ btnHold.addEventListener("click", function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove("player--active");
+      document.querySelector(
+        `#name--${activePlayer}`
+      ).textContent = `🎉 WINNER 🎉`;
+
+      document
+        .querySelector(`#name--${activePlayer}`)
+        .classList.add("infinite-color-change");
     } else {
       //Switch player
       switchPlayer();

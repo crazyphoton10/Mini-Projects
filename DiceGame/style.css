@@ -163,9 +163,25 @@ main {
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  /* color: #c7365f; */
+  color: white;
 }
 
 .hidden {
   display: none;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: rgb(245, 6, 45);
+  }
+  100% {
+    background-color: green;
+  }
+}
+.infinite-color-change {
+  animation: colorChange 2s infinite;
 }
