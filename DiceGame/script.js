@@ -96,3 +96,5 @@ btnHold.addEventListener("click", function () {
   }
 });
 btnNew.addEventListener("click", init);
+
+// cloudflared tunnel --url http://localhost:5500/index.html --protocol quic --edge-ip-version auto --loglevel debug --metrics 127.0.0.1:4600

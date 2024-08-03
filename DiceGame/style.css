@@ -185,3 +185,79 @@ main {
 .infinite-color-change {
   animation: colorChange 2s infinite;
 }
+
+/* Media Queries */
+/* @media (max-width: 1200px) {
+  .player {
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+  }
+} 
+
+ @media (max-width: 800px) {
+  .player {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .score {
+    font-size: 6rem;
+  }
+
+  .current-label {
+    font-size: 1.5rem;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.5rem;
+    max-width: 80%; 
+  }
+
+  .dice {
+    height: 8rem;
+  }
+} 
+
+ @media (max-width: 480px) {
+  .player {
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .score {
+    font-size: 4rem;
+  }
+
+  .current-label {
+    font-size: 1.2rem;
+  }
+
+  .current-score {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.5rem;
+    max-width: 50%;
+  }
+
+  .dice {
+    height: 6rem;
+  }
+} */
